@@ -81,7 +81,209 @@
     	}
     	.dropdown-menu:hover{
     	  background: ;
-        }
+        }.Helluva-Boss{
+      height: 255px;
+      width: 200px;
+    }
+
+    .Dandys-World-ALPHA{
+      height: 255px;
+      width: 250px;
+    }
+
+    .Roblox-BedWwars{
+      height: 200px;
+      width: 200px;
+    }
+
+    .DSMP{
+      height:325px;
+      width: 200px;
+    }
+
+
+    .GENSHIN-IMPACT{
+      height: 450px;
+      width: 350px;
+    }
+
+    .HSR{
+      height: 450px;
+      width: 400px;
+    }
+
+
+    .FPE{
+      height: 200px;
+      width: 300px;
+    }
+
+    .MUSIC-FREAKS{
+      height: 350px;
+      width: 350px;
+    }
+    .center{
+      text-align: center;
+    }
+
+    .hb-link:hover{
+      background: red;
+      color: white;
+      font-weight: bold;
+    }
+
+    a{
+      color: black;
+    }
+
+    .dw-link:hover,.dsmp-link:hover{
+      background: green;
+      color: white;
+      font-weight: bold;
+    }
+
+    .rb-link:hover{
+      background: blue;
+      color: white;
+      font-weight: bold;
+    }
+
+    .dsmp-link a:hover{
+      color: white;
+    }
+
+    .fpe-link a,ol,li:hover{
+      color: black;
+    }
+
+    .fpe-link:hover{
+      background: white;
+      font-weight: bold;
+    }
+
+    .hsr-link:hover{
+      background: linear-gradient(#000661,#43008b,#9e45b0,#e54ed1);
+      color: white;
+      font-weight: bold;
+    }
+
+    .hsr-link{
+      color: white;
+    }
+    th{
+      text-align: center;
+    }
+
+    .gi-link:hover{
+      background: #fafca7;
+      color: black;
+      font-weight: bold;
+    }
+
+    .tmf-link:hover{
+      background: linear-gradient(#44417e,#444ca6,#444691); 
+      color: white;
+      font-weight: bold;
+    }
+
+    .tmf-link{
+      color: white;
+    }
+    
+    .Honkai-Star-Rail tr, .Honkai-Star-Rail td, .Honkai-Star-Rail th{
+      background: linear-gradient(black,#2a3f7e,#2d396c,#2d2f52,#3b345c); 
+      color: white;
+    }
+
+    .edsw-link:hover{
+      background: green;
+    }
+
+    .EDDSWORLD{
+      height: 100%;
+      width: 100%;
+    }
+
+    .edsw-link a:hover{
+      color: #001a00;
+      font-weight: bold;
+    }
+
+    .pictures,.links{
+      font-weight: normal;
+    }
+
+    .hb-link a:hover{
+      color: white;
+    }
+
+    i{
+      font-style: normal;
+    }
+
+    .sp-link:hover{
+      background: linear-gradient(#FFE11D, #00B8C4, #FFEEC3, #EE3253, #844D38, #302E2C); 
+      color: white;
+      font-weight: bold;
+    }
+
+    .SOUTH-PARK{
+      height: 100%;
+      width: 80%;
+    }
+
+    .South_Park_Studios{
+      background: linear-gradient(#FFE11D, #00B8C4, #FFEEC3, #EE3253, #844D38, #302E2C);
+      color: white; 
+      font-weight: bold;
+    }
+
+    .YouTube{
+      color: red; 
+      font-weight: bold;
+    }
+
+    .Twitch{
+      color: white; 
+      background-color: mediumpurple;
+      font-weight: bold;
+    }
+
+    .Twitter{
+      color: white; 
+      background-color: black;
+      font-weight: bold;
+    }
+
+    .Hoyoverse_1{
+      color: darkblue; 
+      font-weight: bold;
+    }
+
+    .Hoyoverse_2{
+      color: lightblue; 
+      font-weight: bold;
+    }
+
+    .Deviantart{
+      color: black;
+      background-color: #68e2a1;
+      font-weight: bold;
+    }
+
+    .Roblox{
+      color: #6d727a; 
+      font-weight: bold;
+    }
+
+    .Eddsworld{
+      color: darkgreen;
+      font-weight: bold;
+    }
+    .Music-Freaks tr, .Music-Freaks td, .Music-Freaks th{
+        background: linear-gradient(#2a3f7e,#2d396c,#2d2f52,#3b345c);
+        color: white;
+    }
     </style>
 </head>
 <body class="container mt-4">
@@ -152,6 +354,230 @@
         </ol>
     </main>
 
+    <main>
+        <div class="row">
+        <section class="table">
+            <h2 style="text-align: center;">My Top Interest</h2>
+            <p id="reason"></p>
+            <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="source">Source</th>
+              <th class="links">
+                <details ontoggle="Info2()">
+                  <summary>Links</summary>
+                   <i id="info2"></i>
+                </details>
+              </th>
+              <th class="pictures">
+                <details ontoggle="Info()">
+                  <summary>Pictures</summary>
+                   <i id="info"></i>
+                </details>
+              </th>
+            </tr>
+
+            <tr class="table table-danger">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Helluva Boss</td>
+              <td class="center">
+                <p class="YouTube">YouTube</p>
+              </td>
+              <td>
+                <ol class="hb-link">
+                  <li>
+                    <a href="https://www.youtube.com/playlist%3Flist%3DPL-uopgYBi65HwiiDR9Y23lomAkGr9mm-S&ved=2ahUKEwjs7d30xuCLAxWwma8BHQ8aNKAQFnoECBQQAQ&usg=AOvVaw2__3EZvoTrxcyVc8QMYNvQ" target="_blank">Helluva Boss Playlist</a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">#HelluvaBoss in Twitter</a>
+                  </li>
+                </ol>
+              </td>
+              <td>
+                <center>
+                  <img src="Helluva_Boss.jpeg" class="Helluva-Boss">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-success">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Dandy's World</td>
+              <td class="center">
+                <p class="Roblox">Roblox</p>
+              </td>
+              <td class="center">
+                <a class="dw-link" href="https://www.roblox.com/games/16116270224/Dandys-World-ALPHA" target="_blank">Dandy's World [ALPHA]</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Dandy's_World.jpeg" class="Dandys-World-ALPHA">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-info">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+              <td class="center">Roblox BedWars</td>
+              <td class="center">
+                <p class="Roblox">Roblox</p>
+              </td>
+              <td class="center">
+                <a class="rb-link" href="https://www.roblox.com/games/6872265039/TRIXIE-BedWars" target="_blank">[TRIXIE] Roblox BedWars</a>               
+              </td>
+              <td>
+                <center>
+                  <img src="Roblox_BedWars.jpeg" class="Roblox-BedWars">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-success">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">04</td>
+              <td class="center">Dream SMP</td>
+              <td class="center">
+                <ul>
+                  <li class="YouTube">YouTube</li>
+                  <li class="Twitch">Twitch</li>
+                </ul>
+              </td>
+              <td>
+                <ol class="dsmp-link">
+                  <li><a href="https://www.youtube.com/playlist?list=PLA1Vun4qFsdIUE19uyoVLXNfelm9yWCws" target="_blank">Dream SMP <strong>(ORIGINAL)</strong> Playlist</a></li>
+                  <li><a href="">Dream SMP <strong>FAN-MADE Animation</strong> Playlist</a></li>
+                </ol>              
+              </td>
+              <td>
+                <center>
+                  <img src="DSMP.jpeg" class="DSMP">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-dark table-secondary" class="fpe">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">05</td>
+              <td class="center" style="color: white;">Fundamental Paper Education</td>
+              <td class="center">
+                <ul>
+                  <li class="YouTube">YouTube</li>
+                  <li class="Twitter">Twitter</li>
+                </ul>
+              </td>
+              <td>
+                <ol class="fpe-link">
+                  <li><a href="https://www.youtube.com/watch?v=TYIeYU4b8FQ" style="color: white;" target="_blank">Basics in Behavior</a></li>
+                  <li><a href="" style="color: white;" target="_blank">#FundamentalPaperEducation in Twitter</a></li>
+                </ol>              
+              </td>
+              <td>
+                <center>
+                  <img src="FPE.jpeg" class="FPE">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="Honkai-Star-Rail">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">06</td>
+              <td class="center">Honkai: Star Rail</td>
+              <td class="center"> 
+                <p class="Hoyoverse_2" >Hoyoverse</p>
+              </td>
+              <td class="center">
+                <a class="hsr-link" href="https://hsr.hoyoverse.com/en-us/" target="_blank">Honkai: Star Rail Official Website</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Honkai_Star_Rail.jpeg" class="HSR">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-warning">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">07</td>
+              <td class="center">Genshin Impact</td>
+              <td class="center">
+                <p class="Hoyoverse_1">Hoyoverse</p>
+              </td>
+              <td class="center">
+                <a class="gi-link" href="https://genshin.hoyoverse.com/en/" target="_blank">Genshin Impact Official Website</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Genshin_Impact.jpeg" class="GENSHIN-IMPACT">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-light table-secondary">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">08</td>
+              <td class="center">South Park</td>
+              <td class="center">
+                <details ontoggle="Note()">
+                  <summary>Note: </summary>
+                    <i id="show"></i>
+                </details>
+
+                <br>
+
+                <p class="South_Park_Studios">South Park Studios</p>
+              </td>
+              <td class="center">
+                <a class="sp-link" href="https://www.southparkstudios.com" target="_blank">South Park Studios</a>
+              </td>
+              <td>
+                <center>
+                  <img class="SOUTH-PARK" src="South_Park.jpeg">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="Music-Freaks">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">09</td>
+              <td class="center">Music Freaks</td>
+              <td class="center"> 
+                <p style="color: red; font-weight: bold;">YouTube</p>
+              </td>
+              <td class="center">
+                <a class="tmf-link" href="https://www.youtube.com/playlist?list=PLAuHp5ThA0c_KTMj17vlZsAI9UCXfWl3c" target="_blank">Music Freaks | Gacha Musical Series</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Music_Freaks.jpeg" class="MUSIC-FREAKS">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-success">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">10</td>
+              <td class="center">Eddsworld</td>
+              <td class="center">
+                <ul>
+                  <li class="YouTube">YouTube</li>
+                  <li class="Twitter">Twitter</li>
+                  <li class="Eddsworld">Eddsworld Offical Website</li>
+                  <li class="Deviantart">Deviantart</li>
+                </ul>
+              </td>
+              <td>
+                <ol class="edsw-link">
+                  <li class="edsw-link_1"><a href="" target="_blank">Eddsworld YT Channel</li>
+                  <li class="edsw-link_1"><a href="" target="_blank">Eddsworld Twitter</li>
+                  <li class="edsw-link_1"><a href="https://eddsworld.co.uk" target="_blank">Eddsworld Official Website</li>
+                  <li class="edsw-link_1"><a href="https://www.deviantart.com/eddsworld" target="_blank">Eddsworld Deviantart</a></li>
+                </ol>
+              </td>
+              <td>
+                <center>
+                  <img class="EDDSWORLD" src="Eddsworld.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        <section>
+      </div>
+    </main>
+
     <footer style="text-align: center; padding: 10px; background-color: #ce80ff; color: white;">
         &copy; 2024 My Personal Page
     </footer>
@@ -160,5 +586,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
