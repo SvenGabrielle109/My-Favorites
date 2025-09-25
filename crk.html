@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8å.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#ffb5c1, #ae58ff);
+        }
+        header, footer{
+            background-color: #ce80ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            background:#ae58ff;
+            padding: 10px;
+            position: sticky;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #ffc4e7;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffc4e7;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        #explaination1{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .navbar-nav .dropdown-menu {
+	      position: absolute;
+	      top: 100%;
+	      margin-right: 15px;
+	    }
+        .dropdown-menu {
+    	  min-width: 350px;
+    	  max-width: 350px;
+    	  white-space: normal;
+    	  left: auto !important;
+    	  right: 0 !important;
+	    }
+    	.nav-item a:hover{
+    	  background: #de96e3;
+	    }
+	    button {
+	      padding: 10px 20px;
+	      background: #5e4c5a;
+	      color: #fff;
+	      border: none;
+	      border-radius: 5px;
+	      cursor: pointer;
+	    }
+    	.dropdown-item a:hover{
+      		background: #de96e3;
+    	}
+    	.dropdown-menu:hover{
+    	  background: ;
+        }a{
+            color: black;
+        }th{
+            text-align: center;
+        }.center{
+            text-align: center;
+        }img{
+            height: 100px;
+            width: 100px;
+        }
+        .dc-link:hover,.dc_dl-link:hover{
+            background: linear-gradient(black,mediumpurple);
+            color: white;
+            font-weight: bold;
+        }.dc-link,.dc_dl-link{
+            color: white
+        }.ccc-link:hover{
+            background: linear-gradient(black,#808080);
+            color: white;
+            font-weight: bold;
+        }.espresso-link:hover{
+            background: linear-gradient(#dcd6d5,#b8adab,#958381);
+            color: #715a57;
+            font-weight: bold;
+        }.shadow-milk-link:hover{
+            background: linear-gradient(black,blue);
+            color: white;
+            font-weight: bold;
+        }.epic{
+            background: linear-gradient(#c83056,#8f1b40,#c14467,#e499a9,#e069d4);
+        }.espresso-link{
+            color: #b8adab
+        }.beast{
+            background: linear-gradient(#391d26,#150a0a,#441a21,#e73451,#50172c);
+            color: white;
+            font-weight: bold;
+        }.ancient{
+            background: linear-gradient(#291c3c,#0c0a15,#171440,#701ca4,#c22b92,#201250);
+            color: white;
+            font-weight: bold;
+        }.super_epic{
+            background: linear-gradient(#e2ab7a,#a96a9b,#83417e,#722f93,#f6c885);
+            color: white;
+            font-weight: bold;
+        }.cotton-link:hover{
+            background-color: #97b1c0;
+            color: #3c0a07;
+            font-weight: bold;
+        }.parfait-link:hover{
+            background: linear-gradient(#b28069,#774942,#b28069,#f9ffab,#b28069,#774942,#b28069);
+            color: white;
+            font-weight: bold;
+        }.clotted_cream-link:hover{
+            background: linear-gradient(#f3e5c9,#d4bb88,#e1e1e1,#dfb669,#e1e1e1,#d4bb88,#f3e5c9);
+            color: #193434;
+            font-weight: bold;
+        }.mystic_flour-link:hover{
+            background-color: wheat;
+            color: black;
+            font-weight: bold;
+        }.sherbet-link:hover{
+            background: linear-gradient(#fafcff,#d3e8f9);
+            color: #24398f;
+            font-weight: bold;
+        }.agar_agar-link:hover{
+            background-color: darkred;
+            color: lightcyan;
+            font-weight: bold;
+        }.eternal_sugar-link:hover{
+            background: deeppink;
+            color: lightpink;
+            font-weight: bold;
+        }.horizontal-container {
+            display: flex;
+            justify-content: center; /* centers images horizontally */
+            align-items: center;     /* centers images vertically (optional) */
+            gap: 16px;
+        }.pv-link,.c_pv-link{
+            color: black;
+        }.pv-link:hover,.c_pv-link:hover{
+            background: linear-gradient(#75a0ff, #437eff);
+            color: white;
+            font-weight: bold;
+        }.eternal_sugar td{
+            background-color: hotpink; 
+            color: white;
+        }.cotton td{
+            background-color: rgb(255, 255, 239)
+        }.parfait td{
+            background-color: #ffe6ff;
+        }.dark_cacao td{
+            background-color: mediumpurple; 
+            color: white;
+        }.espresso td{
+            background-color: #4e312d; 
+            color: #b8adab
+        }.CRK-Title{
+            background: linear-gradient(gold, #ff007b,#75a0ff,mediumpurple,#00d24d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a958c7;">
+    	    <div class="collapse navbar-collapse" id="navbarNav">
+      		    <ul class="navbar-nav ml-auto d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNav">
+				        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+        	  	                <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Interest</a>
+        	 		                <div class="dropdown-menu">
+		        	                    <a class="dropdown-item" href="dandy's-world.html" target="_self">Dandy's World</a>
+		           	                    <a class="dropdown-item" href="honkai-star-rail.html" target="_self">Honkai: Star Rail</a> 
+		           	                    <a class="dropdown-item" href="Enigmaverse.html" target="_self">Enigmaverse</a>
+                                        <a class="dropdown-item" href="crk.html" target="_self">Cookie Run Kingdom</a>
+    			                        <a class="dropdown-item" href="helluva_boss.html" target="_self">Helluva Boss</a>
+            		                    <a class="dropdown-item" href="hazbin_hotel.html" target="_self">Hazbin Hotel</a>
+			                            <a class="dropdown-item" href="my_hero_academia.html" target="_self">MHA</a>
+			                            <a class="dropdown-item" href="south_park-characters.html" target="_self">South Park</a>
+    	      	                    </div>
+    	    	            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+				        </ul>
+			        </div>
+                </ul>
+		    </div>
+	    </nav>
+    </header>
+
+    <br>
+    
+    <main class="container">
+        <h1 class="CRK-Title">Cookie Run Kingdom</h1>
+        <div>
+            <p id="explaination1"></p>
+        </div>
+
+        <br>
+
+        <center>
+        <section class="table">
+            <h2>Favorite Healing Cookie</h2>
+            <table class="table table-bordered">
+                <tr class="table table-light">
+                    <th class="#">No.</th>
+                    <th class="name">Name</th>
+                    <th class="role">Rarity</th>
+                    <th class="source">Link</th>
+                    <th class="picture">Picture</th>
+                </tr>
+                
+                <tr class="table table-warning">
+                    <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                    <td>
+                        <ol>
+                            <li>Pure Vanilla Cookie</li>
+                            <li>Pure Vanilla Cookie (Compassionate)</li>
+                        </ol>
+                    </td>
+                    <td class="rarity">
+                        <center>
+                            <p class="ancient" style="font-weight: bold; color: white">Ancient</p>
+                        </center>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>
+                                <a class="pv-link" href="https://cookierunkingdom.fandom.com/wiki/Pure_Vanilla_Cookie" target="_blank">Pure Vanilla Cookie Wiki</a>
+                            </li>
+                            <li>
+                                <a class="c_pv-link" href="https://cookierunkingdom.fandom.com/wiki/Pure_Vanilla_Cookie_(Compassionate)" target="_blank">Pure Vanilla Cookie (Compassionate) Wiki</a>
+                            </li>
+                        </ol>
+                    </td>
+                    <td class="pv">
+                        <center>
+                            <div class="horizontal-container">
+                                <img src="PV.jpg">
+                                <img src="PV_C.jpg">
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr style="background-color: #fcf5e8;">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif; ">02</td>
+                    <td class="center">Mysic Flour Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="beast">Beast</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="mystic_flour-link" href="https://cookierunkingdom.fandom.com/wiki/Mystic_Flour_Cookie" target="_blank">Mystic Flour Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img src="Mystic_Flour.jpg">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+            <h2>Favorite Charge Cookie</h2>
+            <table class="table table-bordered">
+                <tr class="table table-light">
+                    <th class="#">No.</th>
+                    <th class="name">Name</th>
+                    <th class="role">Rarity</th>
+                    <th class="source">Link</th>
+                    <th class="picture">Picture</th>
+                </tr>
+                
+                <tr class="dark_cacao">
+                    <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                    <td>
+                        <ul>
+                            <li>Dark Cacao Cookie</li>
+                            <li>Dark Cacao Cookie (Dragon Lord)</li>
+                        </ul>
+                    </td>
+                    <td class="rarity">
+                        <center>
+                            <p class="ancient">Ancient</p>
+                        </center>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>
+                                <a class="dc-link" href="https://cookierunkingdom.fandom.com/wiki/Dark_Cacao_Cookie" target="_blank">Dark Cacao Cookie Wiki</a>
+                            </li>
+                            <li>
+                                <a class="dc_dl-link" href="https://cookierunkingdom.fandom.com/wiki/Dark_Cacao_Cookie_(Dragon Lord)" target="_blank">Dark Cacao Cookie (Dragon Lord) Wiki</a>
+                            </li>
+                        </ol>
+                    </td>
+                    <td class="dc">
+                        <center>
+                            <div class="scroll-container">
+                                <img src="DC.jpg">
+                                <img src="DC_DL.jpg">
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr class="table table-default table-secondary">
+                    <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+                    <td class="center">Crunchy Chip Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="epic">Epic</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="ccc-link" href="https://cookierunkingdom.fandom.com/wiki/Crunchy_Chip_Cookie" target="_blank">Crunchy Chip Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img src="Crunchy_Chip.jpg">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+            <h2>Favorite Support Cookie</h2>
+            <table class="table table-bordered">
+                <tr class="table table-light">
+                    <th class="#">No.</th>
+                    <th class="name">Name</th>
+                    <th class="role">Rarity</th>
+                    <th class="source">Link</th>
+                    <th class="picture">Picture</th>
+                </tr>
+                <tr class="cotton">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">01</td>
+                    <td class="center">Cotton Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="epic">Epic</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="cotton-link" href="https://cookierunkingdom.fandom.com/wiki/Parfait_Cookie" target="_blank">Cotton Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img src="Cotton.jpg">
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr class="parfait">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">02</td>
+                    <td class="center">Parfait Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="epic">Epic</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="parfait-link" href="https://cookierunkingdom.fandom.com/wiki/Parfait_Cookie" target="_blank">Parfait Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img class="-pic" src="Parfait.jpg">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+            <h2>Favorite Magic Cookie</h2>
+            <table class="table table-bordered">
+                <tr class="table table-light">
+                    <th class="#">No.</th>
+                    <th class="name">Name</th>
+                    <th class="role">Rarity</th>
+                    <th class="source">Link</th>
+                    <th class="picture">Picture</th>
+                </tr>
+                
+                <tr class="table table-primary">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">01</td>
+                    <td class="center">Shadow Milk Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="beast" style="font-weight: bold; color: white;">Beast</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="shadow-milk-link" href="https://cookierunkingdom.fandom.com/wiki/Shadow_Milk_Cookie" target="_blank">Shadow Milk Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img class="-pic" src="Shadow_Milk.jpg">
+                        </center>
+                    </td>
+                </tr>
+                
+                <tr class="table table-warning">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">02</td>
+                    <td class="center">Clotted Cream Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="super_epic">Super Epic</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="clotted_cream-link" href="https://cookierunkingdom.fandom.com/wiki/Clotted_Cream_Cookie" target="_blank">Clotted Cream Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img class="-pic" src="Clotted_Cream.jpg">
+                        </center>
+                    </td>
+                </tr>
+
+                <tr class="espresso">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">03</td>
+                    <td class="center">Espresso Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="epic" style="color: #0c0a15;">Epic</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="espresso-link" href="https://cookierunkingdom.fandom.com/wiki/Espresso_Cookie" target="_blank">Espresso Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img class="espresso-pic" src="Espresso.jpg">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h2>Favorite Ranged Cookie</h2>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="role">Rarity</th>
+              <th class="source">Link</th>
+              <th class="picture">Picture</th>
+            </tr>
+
+            <tr class="table table-primary">
+               <td class="center" style="font-family: 'Digital Numbers',sans-serif;">01</td>
+              <td class="center">Sherbet Cookie</td>
+              <td class="rarity">
+                <center>
+                  <p class="super_epic">Super Epic</p>
+                </center>
+              </td>
+              <td class="center">
+                <a class="sherbet-link" href="https://cookierunkingdom.fandom.com/wiki/Sherbet_Cookie" target="_blank">Sherbet Cookie Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Sherbet.jpg">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h2>Favorite Ambush Cookie</h2>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="role">Rarity</th>
+              <th class="source">Link</th>
+              <th class="picture">Picture</th>
+            </tr>
+
+            <tr class="table table-primary">
+               <td class="center" style="font-family: 'Digital Numbers',sans-serif;">01</td>
+              <td class="center">Agar Agr Cookie</td>
+              <td class="rarity">
+                <center>
+                  <p class="epic">Epic</p>
+                </center>
+              </td>
+              <td class="center">
+                <a class="agar_agar-link" href="https://cookierunkingdom.fandom.com/wiki/Agar_Agar_Cookie" target="_blank">Agar Agar Cookie Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img src="Agar_Agar.jpg">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>   
+
+      <br>
+
+        <section class="table">
+            <h2>Favorite Bomber Cookie</h2>
+            <table class="table table-bordered">
+                <tr class="table table-light">
+                    <th class="#">No.</th>
+                    <th class="name">Name</th>
+                    <th class="role">Rarity</th>
+                    <th class="source">Link</th>
+                    <th class="picture">Picture</th>
+                </tr>
+                        
+                <tr class="eternal_sugar">
+                    <td class="center" style="font-family: 'Digital Numbers',sans-serif;">01</td>
+                    <td class="center">Eternal Sugar Cookie</td>
+                    <td class="rarity">
+                        <center>
+                            <p class="beast">Beast</p>
+                        </center>
+                    </td>
+                    <td class="center">
+                        <a class="eternal_sugar-link" href="https://cookierunkingdom.fandom.com/wiki/Eternal_Sugar_Cookie" target="_blank">Eternal Sugar Cookie Wiki</a>
+                    </td>
+                    <td>
+                        <center>
+                            <img class="eternal_sugar-pic" src="Eternal_Sugar.jpg">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <br>
+
+    <footer style="text-align: center; padding: 10px; background-color: #ce80ff; color: white;">
+        &copy; 2024 My Personal Page
+        &copy; Cookie Run Kingdom Wiki
+    </footer>
+
+    <script>
+        document.getElementById('explaination1').innerHTML="These are based on the in-game" + "<br>" + "And, the pictures are also based on wiki";
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

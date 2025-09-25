@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8å.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#ffb5c1, #ae58ff);
+        }
+        header, footer{
+            background-color: #ce80ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            background:#ae58ff;
+            padding: 10px;
+            position: sticky;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #ffc4e7;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffc4e7;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .navbar-nav .dropdown-menu {
+	      position: absolute;
+	      top: 100%;
+	      margin-right: 15px;
+	    }
+        .dropdown-menu {
+    	  min-width: 350px;
+    	  max-width: 350px;
+    	  white-space: normal;
+    	  left: auto !important;
+    	  right: 0 !important;
+	    }
+    	.nav-item a:hover{
+    	  background: #de96e3;
+	    }
+	    button {
+	      padding: 10px 20px;
+	      background: #5e4c5a;
+	      color: #fff;
+	      border: none;
+	      border-radius: 5px;
+	      cursor: pointer;
+	    }
+    	.dropdown-item a:hover{
+      		background: #de96e3;
+    	}
+    	.dropdown-menu:hover{
+    	  background: ;
+      }.HSR-TITLE{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        background: linear-gradient(#000000, #2c003c,#42008d,#26007B,#2A4B7C);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }div .scroll-container{
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }.imaginary-link, .fire-link, .quantum-link, .lightning-link, .wind-link,.physical-link{
+            color: black;
+        }.imaginary-link:hover{
+            background-color: lightyellow;
+            font-weight: bold;
+            color: #000;
+        }.fire-link:hover{
+            font-weight: bold;
+            color: #000;
+            background: linear-gradient(yellow,orange,red);
+        }.wind-link:hover{
+            background: linear-gradient(lightgreen, greenyellow);
+            color: black;
+            font-weight: bold;
+        }.physical-link:hover{
+          background-color: #ccc;
+          color: #000;
+          font-weight: bold;
+        }
+        
+        .lighting-tab{
+            background: linear-gradient(#cc99ff,#e699ff);
+        }.wind-tab{
+            background: linear-gradient(#68c190,#addcb5);
+        }.quantum-tab{
+            background: linear-gradient(#ecb3ff, #60f);
+        }.physical-tab{
+            background-color: #cccccc;
+        }
+        
+        .imbibitor-lunae-pic, .sunday-pic{
+            height: 60%;
+            width: 60%;
+        }.jing-yuan-pic, .moze-pic{
+            height: 60%;
+            width: 60%;
+        }.jade-pic{
+            height: 90%;
+            width: 90%;
+        }.the-herta-pic{
+            height: 65%;
+            width: 65%;
+        }.jiaoqiu-pic, .lingsha-pic{
+            height: 71%;
+            width: 71%;
+        }.rappa-pic,.castorice-pic,{
+            height: 71%;
+            width: 71%;
+        }.blade-pic,.stella-pic,.caelus-pic{
+          height: 61%;
+          width: 61%;
+        }.acheron-pic{
+          height: 51%;
+          width: 51%;
+        }.yunli-pic,.natasha-pic{
+          height: 60%;
+          width: 60%;
+        }
+
+    </style>
+</head>
+<body class="container mt-4">
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a958c7;">
+    	    <div class="collapse navbar-collapse" id="navbarNav">
+      		    <ul class="navbar-nav ml-auto d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNav">
+				        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+        	  	                <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Interest</a>
+        	 		            <div class="dropdown-menu">
+		        	              <a class="dropdown-item" href="dandy's-world.html" target="_self">Dandy's World</a>
+		           	                    <a class="dropdown-item" href="honkai-star-rail.html" target="_self">Honkai: Star Rail</a> 
+		           	                    <a class="dropdown-item" href="Enigmaverse.html" target="_self">Enigmaverse</a>
+                                        <a class="dropdown-item" href="crk.html" target="_self">Cookie Run Kingdom</a>
+    			                        <a class="dropdown-item" href="helluva_boss.html" target="_self">Helluva Boss</a>
+            		                    <a class="dropdown-item" href="hazbin_hotel.html" target="_self">Hazbin Hotel</a>
+			                            <a class="dropdown-item" href="my_hero_academia.html" target="_self">MHA</a>
+			                            <a class="dropdown-item" href="south_park-characters.html" target="_self">South Park</a>
+          	              </div>
+    	    	            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+				        </ul>
+			        </div>
+                </ul>
+		    </div>
+	    </nav>
+    </header>
+
+    <br>
+    
+    <main class="container">
+        <h1 class="HSR-TITLE">Honkai Star Rail</h1>
+    </main>
+
+    <br>
+
+    <center>
+        <section class="table">
+          <h1 style="color: yellow;">Imaginary</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="table table-warning">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Imbibitor Lunae</td>
+              <td class="center">Destruction</td>
+              <td class="center">
+                <a class="imaginary-link" href="https://honkai-star-rail.fandom.com/wiki/Dan_Heng_•_Imbibitor_Lunae" target="_blank">Dan_Heng • Imbibitor Lunae Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="imbibitor-lunae-pic" src="Imbibitor_Lunae.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-warning">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Sunday</td>
+              <td class="center">Harmony</td>
+              <td class="center">
+                <a class="imaginary-link" href="https://honkai-star-rail.fandom.com/wiki/Sunday" target="_blank">Sunday Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="sunday-pic" src="Sunday.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-warning">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+              <td class="center">Rappa</td>
+              <td class="center">Erudition</td>
+              <td class="center">
+                <a class="imaginary-link" href="https://honkai-star-rail.fandom.com/wiki/Rappa" target="_blank">Rappa Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="rappa-pic" src="Rappa.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h1 style="color: orangered;">Fire</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="table table-danger">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Lingsha</td>
+              <td class="center">Abundance</td>
+              <td class="center">
+                <a class="fire-link" href="https://honkai-star-rail.fandom.com/wiki/Lingsha">Lingsha Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="lingsha-pic" src="Lingsha.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="table table-danger">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Jiaoqiu</td>
+              <td class="center">Nihility</td>
+              <td class="center">
+                <a class="fire-link" href="https://honkai-star-rail.fandom.com/wiki/Jiaoqiu" target="_blank">Jiaoqiu Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="jiaoqiu-pic" src="Jiaoqiu.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h1 style="color: #4e47b7;">Quantum</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="quantum-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Castorice</td>
+              <td class="center">Remembrance</td>
+              <td class="center">
+                <a class="quantum-link" href="https://honkai-star-rail.fandom.com/wiki/Castorice" target="_blank">Castorice Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="castorice-pic" src="Castorice.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="quantum-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Jade</td>
+              <td class="center">Erudition</td>
+              <td class="center">
+                <a class="quantum-link" href="https://honkai-star-rail.fandom.com/wiki/Jade">Jade Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="jade-pic" src="Jade.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section>
+          <h1 style="color: lightcyan;">Ice</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="table table-info">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">The Herta</td>
+              <td class="center">Eurdition</td>
+              <td class="center">
+                <a class="ice-link" href="https://honkai-star-rail.fandom.com/wiki/The_Herta" target="_blank">The Herta Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="the-herta-pic" src="The_Herta.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section>
+          <h1 style="color: blueviolet;">Lighting</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+            
+            <tr class="lighting-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Acheron</td>
+              <td class="center">Nihility</td>
+              <td class="center">
+                <a class="lighting-link" href="https://honkai-star-rail.fandom.com/wiki/Acheron" target="_blank">Archon Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="acheron-pic" src="Acheron.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="lighting-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Jing Yuan</td>
+              <td class="center">Erudition</td>
+              <td class="center">
+                <a class="lighting-link" href="https://honkai-star-rail.fandom.com/wiki/Jing_Yuan" target="_blank">Jing Yuan Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="jing-yuan-pic" src="Jing_Yuan.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="lighting-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+              <td class="center">Moze</td>
+              <td class="center">The Hunt</td>
+              <td class="center">
+                <a class="lighting-link" href="https://honkai-star-rail.fandom.com/wiki/Moze">Moze Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="moze-pic" src="Moze.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h1 style="color: greenyellow;">Wind</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="wind-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Blade</td>
+              <td class="center">Destruction</td>
+              <td class="center">
+                <a class="wind-link" href="https://honkai-star-rail.fandom.com/wiki/Blade">Blade Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="blade-pic" src="Blade.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
+
+      <br>
+
+      <center>
+        <section class="table">
+          <h1 style="color: gray;">Physical</h1>
+          <table class="table table-bordered">
+            <tr class="table table-light">
+              <th class="#">No.</th>
+              <th class="name">Name</th>
+              <th class="path">Path</th>
+              <th class="link">Links</th>
+              <th class="pictures">Pictures</th>
+            </tr>
+
+            <tr class="physical-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+              <td class="center">Yunli</td>
+              <td class="center">Destruction</td>
+              <td class="center">
+                <a class="physical-link" href="https://honkai-star-rail.fandom.com/wiki/Yunli">Yunli Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="yunli-pic" src="Yunli.png">
+                </center>
+              </td>
+            </tr>
+
+            <tr class="physical-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+              <td class="center">Trailblazer</td>
+              <td class="center">Destruction</td>
+              <td>
+                <a class="physical-link" href="https://honkai-star-rail.fandom.com/wiki/Trailblazer">Trailblazer Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <div class="scroll-container">
+                    <img class="stella-pic" src="Trailblazer_Stella.png"><br>
+                    <img class="caelus-pic" src="Trailblazer_Caelus.png">
+                  </div>
+                </center>
+              </td>
+            </tr>
+
+            <tr class="physical-tab">
+              <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+              <td class="center">Natasha</td>
+              <td class="center">Destruction</td>
+              <td>
+                <a class="physical-link" href="https://honkai-star-rail.fandom.com/wiki/Natasha">Natasha Wiki</a>
+              </td>
+              <td>
+                <center>
+                  <img class="natasha-pic" src="Natasha.png">
+                </center>
+              </td>
+            </tr>
+          </table>
+        </section>
+    </center>
+
+    <footer style="text-align: center; padding: 10px; background-color: #ce80ff; color: white;">
+        &copy; 2024 My Personal Page <br>
+        &copy; The Honkai Star Rail Wiki
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

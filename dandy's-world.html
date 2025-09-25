@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8å.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#ffb5c1, #ae58ff);
+        }
+        header, footer{
+            background-color: #ce80ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            background:#ae58ff;
+            padding: 10px;
+            position: sticky;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #ffc4e7;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffc4e7;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .navbar-nav .dropdown-menu {
+	      position: absolute;
+	      top: 100%;
+	      margin-right: 15px;
+	    }
+        .dropdown-menu {
+    	  min-width: 350px;
+    	  max-width: 350px;
+    	  white-space: normal;
+    	  left: auto !important;
+    	  right: 0 !important;
+	    }
+    	.nav-item a:hover{
+    	  background: #de96e3;
+	    }
+	    button {
+	      padding: 10px 20px;
+	      background: #5e4c5a;
+	      color: #fff;
+	      border: none;
+	      border-radius: 5px;
+	      cursor: pointer;
+	    }
+    	.dropdown-item a:hover{
+      		background: #de96e3;
+    	}
+    	.dropdown-menu:hover{
+    	  background: ;
+      }.DW-TITLE{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: darkgreen;
+            text-align: center;
+        }img{
+            height: 100px;
+            width: 100px;
+        }.boxten-link:hover{
+            color: #622362;
+            background: linear-gradient(#692D69,#f197f7);
+            font-weight: bold;
+        }a{
+            color: black;
+        }.glisten-link:hover{
+            color: white;
+            background: linear-gradient(#FFDB9C,#F2BADC);
+            font-weight: bold;
+        }.rodger-link:hover{
+            color: #1b1b1b;
+            background: linear-gradient(#7f6754,#7d69fd);
+            font-weight: bold;
+        }.rodger-link{
+            color: white;
+        }.shelly-link:hover{
+            background: linear-gradient(#5f4638,#271b14);
+            color: #f9dbbf;
+            font-weight: bold;
+        }.goob-link:hover{
+            background: linear-gradient(#3a5ab3,#b32e3e);
+            color: #f9dbbf;
+            font-weight: bold;
+        }.brightney-link:hover{
+            background: linear-gradient(#d01d65,#7d465b);
+            color: white;
+            font-weight: bold;
+        }.toodles-link:hover{
+            background: linear-gradient(black,#9d9d9d);
+            font-weight: bold;
+            color: white;
+        }.astro-link:hover{
+            background: linear-gradient(#4c5b9a,#7c8fbb);
+            color: #a7e2e2;
+            font-weight: bold;
+        }.dandy-link:hover{
+            background: linear-gradient(#9ddca0,#efedbf);
+            color: darkgreen;
+            font-weight: bold;
+        }.twisted-astro-link:hover{
+            background: linear-gradient(#4c5b9a,#7c8fbb);
+            color: red;
+            font-weight: bold;
+        }.twisted-dandy-link:hover{
+            background: linear-gradient(#fb3f71,#fdb556,#ffff56,#4fff30,#4b78fe,#9d3bfe);
+            color: darkred;
+            font-weight: bold;
+        }.twisted-glisten-link:hover{
+            color: #b9625f;
+            background: linear-gradient(#dcc8a5,#F2BADC,black);
+            font-weight: bold;
+        }.twisted-boxten-link:hover{
+            color: red;
+            background: linear-gradient(#692D69,#f197f7);
+            font-weight: bold;
+        }.toons,.twisted{
+            font-family: Gill Sans MT,Calibri, sans-serif;
+        }.twisted{
+            color: red;
+        }.toodles-link,.twisted-rodger-link{
+            color: white;
+        }.twisted-rodger-link:hover{
+            color: red;
+            background: linear-gradient(#7f6754,#7d69fd);
+            font-weight: bold;
+        }.center{
+            text-align: center;
+        }.twisted-sprout-link:hover{
+            color: #4e5c4e;
+            background: linear-gradient(#ffffff,#f6e2fc);
+            font-weight: bold;
+        }.cosmo-link:hover{
+            color: black;
+            background: linear-gradient(#b0fcf1,#d0fc92,#e991f8);
+            font-weight: bold;
+        }.sprout-link:hover{
+            color: darkgreen;
+            background: linear-gradient(#ffffff,#f6e2fc);
+            font-weight: bold;
+        }.bassie-link:hover{
+            background: linear-gradient(#b596e3, #de96e3);
+            color: white;
+            font-weight: bold;
+        }.twisted-bassie-link:hover{
+            background: linear-gradient(#de96e3,#c1f0c1,black);
+            color: white;
+            font-weight: bold;
+        }.sentence{
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 17px
+        }.toons, .twisted{
+          text-align: center;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a958c7;">
+    	    <div class="collapse navbar-collapse" id="navbarNav">
+      		    <ul class="navbar-nav ml-auto d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNav">
+				        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+        	  	                <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Interest</a>
+        	 		            <div class="dropdown-menu">
+		        	                <a class="dropdown-item" href="dandy's-world.html" target="_self">Dandy's World</a>
+		           	                    <a class="dropdown-item" href="honkai-star-rail.html" target="_self">Honkai: Star Rail</a> 
+		           	                    <a class="dropdown-item" href="Enigmaverse.html" target="_self">Enigmaverse</a>
+                                        <a class="dropdown-item" href="crk.html" target="_self">Cookie Run Kingdom</a>
+    			                        <a class="dropdown-item" href="helluva_boss.html" target="_self">Helluva Boss</a>
+            		                    <a class="dropdown-item" href="hazbin_hotel.html" target="_self">Hazbin Hotel</a>
+			                            <a class="dropdown-item" href="my_hero_academia.html" target="_self">MHA</a>
+			                            <a class="dropdown-item" href="south_park-characters.html" target="_self">South Park</a>
+          	                    </div>
+    	    	            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+				        </ul>
+			        </div>
+                </ul>
+		    </div>
+	    </nav>
+    </header>
+
+    <br>
+    
+    <main class="container">
+        <h1 class="DW-TITLE">Dandy's World</h1>
+        <br>
+        
+        <div class="row">
+        <div class="col-md-6">
+          <section class="table">
+            <h2 class="toons">Favorite Toon</h1>
+            <table class="table table-bordered">
+              <tr class="table table-light">
+                <th class="#">No.</th>
+                <th class="name">Name</th>
+                <th class="source">Source</th>
+                <th class="pictures">Pictures</th>
+              </tr>
+
+              
+              <tr class="table table-success">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                <td class="center">Dandy</td>
+                <td class="center">
+                  <a class="dandy-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Dandy" target="_blank">Dandy Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Dandy.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr style="background: linear-gradient(#b596e3, #de96e3,#c1f0c1);">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+                <td class="center">Bassie</td>
+                <td class="center">
+                  <a class="bassie-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Bassie" target="_blank">Bassie Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Bassie.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-warning">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+                <td class="center">Glisten</td>
+                <td class="center">
+                  <a class="glisten-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Glisten" target="_blank">Glisten Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Glisten.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-danger">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">04</td>
+                <td class="center">Brightney</td>
+                <td class="center">
+                  <a class="brightney-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Brightney" target="_blank">Brightney Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Brightney.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-dark table-secondary">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">05</td>
+                <td class="center">Rodger</td>
+                <td class="center">
+                  <a class="rodger-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Rodger" target="_blank">Rodger Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Rodger.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-info">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">06</td>
+                <td class="center">Astro</td>
+                <td class="center">
+                  <a class="astro-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Astro" target="_blank">Astro Wiki</a>
+                </td>
+                <td class="center">
+                  <center>
+                    <img src="Astro.png">
+                  </center>
+                </td>
+              </tr>
+
+
+              <tr class="table table-warning">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">07</td>
+                <td class="center">Shelly</td>
+                <td class="center">
+                  <a class="shelly-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Shelly" target="_blank">Dandy's World Wiki: Shelly</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Shelly.png">
+                  </center>
+                </td>
+              </tr>
+              
+              <tr class="table table-info">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">08</td>
+                <td class="center">Boxten</td>
+                <td class="center">
+                  <a class="boxten-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Boxten" target="_blank">Boxten Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Boxten.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr style="background-color: #4d2600; color: white;">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">09</td>
+                <td class="center">Cosmo</td>
+                <td class="center">
+                  <a class="cosmo-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Cosmo" target="_blank">Cosmo Wiki</a>
+                </td>
+                <td class="center">
+                  <center>
+                    <img src="Cosmo.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-dark table-secondary">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">10</td>
+                <td class="center">Toodles</td>
+                <td class="center">
+                  <a class="toodles-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Toodles" target="_blank">Toodles Wiki</a>
+                </td>
+                <td class="center">
+                  <center>
+                    <img src="Toodles.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-warning">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">11</td>
+                <td class="center">Goob</td>
+                <td class="center">
+                  <a class="goob-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Goob" target="_blank">Goob Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Goob.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-danger">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">12</td>
+                <td class="center">Sprout</td>
+                <td class="center">
+                  <a class="sprout-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Sprout" target="_blank">Sprout Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Sprout.png">
+                  </center>
+                </td>
+              </tr>
+            </table>
+          <section>
+        </div>
+        
+        <br>
+        
+        <div class="col-md-6">
+          <section class="table">
+            <h2 class="twisted">Favorite Twisted</h1>
+            <table class="table table-bordered">
+              <tr class="table table-light">
+                <th class="#">No.</th>
+                <th class="name">Name</th>
+                <th class="source">Source</th>
+                <th class="pictures">Pictures</th>
+              </tr>
+
+              <tr class="table table-info">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                <td class="center">Twisted Astro</td>
+                <td class="center">
+                  <a class="twisted-astro-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Astro" target="_blank">Twisted Astro Wiki</a>
+                </td>
+                <td>
+                  <center> 
+                    <img src="Twisted_Astro.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-warning">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+                <td class="center">Twisted Glisten</td>
+                <td class="center">
+                  <a class="twisted-glisten-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Glisten" target="_blank">Twisted Glisten Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Glisten.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-success">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">03</td>
+                <td class="center">Twisted Dandy</td>
+                <td class="center">
+                  <a class="twisted-dandy-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Dandy" target="_blank">Twisted Dandy Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Dandy.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr style="background: linear-gradient(#b596e3, #de96e3,#c1f0c1,black);">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">04</td>
+                <td class="center">Twisted Bassie</td>
+                <td class="center">
+                  <a class="twisted-bassie-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Bassie" target="_blank">Twisted Bassie Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Bassie.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-dark table-secondary">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">05</td>
+                <td class="center">Twisted Rodger</td>
+                <td class="center">
+                  <a class="twisted-rodger-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Rodger" target="_blank">Twisted Rodger Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Rodger.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-danger">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">06</td>
+                <td class="center">Twisted Sprout</td>
+                <td class="center">
+                  <a class="twisted-sprout-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Sprout" target="_blank">Twisted Sprout Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Sprout.png">
+                  </center>
+                </td>
+              </tr>
+
+              <tr class="table table-info">
+                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">07</td>
+                <td class="center">Twisted Boxten</td>
+                <td class="center">
+                  <a class="twisted-boxten-link" href="https://dandys-world-robloxhorror.fandom.com/wiki/Twisted_Boxten" target="_blank">Twisted Boxten Wiki</a>
+                </td>
+                <td>
+                  <center>
+                    <img src="Twisted_Boxten.png">
+                  </center>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer style="text-align: center; padding: 10px; background-color: #ce80ff; color: white;">
+        &copy; 2024 My Personal Page
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

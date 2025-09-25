@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8å.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#ffb5c1, #ae58ff);
+        }
+        header, footer{
+            background-color: #ce80ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            background:#ae58ff;
+            padding: 10px;
+            position: sticky;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            background-color: #ffc4e7;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffc4e7;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        #explaination1{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .navbar-nav .dropdown-menu {
+	      position: absolute;
+	      top: 100%;
+	      margin-right: 15px;
+	    }
+        .dropdown-menu {
+    	  min-width: 350px;
+    	  max-width: 350px;
+    	  white-space: normal;
+    	  left: auto !important;
+    	  right: 0 !important;
+	    }
+    	.nav-item a:hover{
+    	  background: #de96e3;
+	    }
+	    button {
+	      padding: 10px 20px;
+	      background: #5e4c5a;
+	      color: #fff;
+	      border: none;
+	      border-radius: 5px;
+	      cursor: pointer;
+	    }
+    	.dropdown-item a:hover{
+      		background: #de96e3;
+    	}
+    	.dropdown-menu:hover{
+    	  background: 
+        }
+        .Enigmaverse-Title{
+            background: linear-gradient(black,blue,#fa2a55);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+        }.center{
+            text-align: center;
+        }img{
+            height: 100px;
+            width: 100px;
+        }.horizontal-container {
+            display: flex;
+            justify-content: center; /* centers images horizontally */
+            align-items: center;     /* centers images vertically (optional) */
+            gap: 16px;
+        }.hansel-link,.beli∀l-link{
+            color: black;
+        }.center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }a{
+            color: #000;
+        }.ppf-staff a:hover{
+            color: #000;
+            font-weight: bold;
+            background-color: lightgrey;
+        }.ppf-anomalies a:hover{
+            color: #000;
+            font-weight: bold;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a958c7;">
+    	    <div class="collapse navbar-collapse" id="navbarNav">
+      		    <ul class="navbar-nav ml-auto d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNav">
+				        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+        	  	                <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Interest</a>
+        	 		                <div class="dropdown-menu">
+		        	                    <a class="dropdown-item" href="dandy's-world.html" target="_self">Dandy's World</a>
+		           	                    <a class="dropdown-item" href="honkai-star-rail.html" target="_self">Honkai: Star Rail</a> 
+		           	                    <a class="dropdown-item" href="Enigmaverse.html" target="_self">Enigmaverse</a>
+                                        <a class="dropdown-item" href="crk.html" target="_self">Cookie Run Kingdom</a>
+    			                        <a class="dropdown-item" href="helluva_boss.html" target="_self">Helluva Boss</a>
+            		                    <a class="dropdown-item" href="hazbin_hotel.html" target="_self">Hazbin Hotel</a>
+			                            <a class="dropdown-item" href="my_hero_academia.html" target="_self">MHA</a>
+			                            <a class="dropdown-item" href="south_park-characters.html" target="_self">South Park</a>
+                                        <a class="dropdown-item" href="genshin_impact.html" target="_self">Genshin Impact</a>
+    	      	                    </div>
+    	    	            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+				        </ul>
+			        </div>
+                </ul>
+		    </div>
+	    </nav>
+    </header>
+
+    <br>
+    
+    <main class="container">
+        <h1 class="Enigmaverse-Title">Enigmaverse</h1>
+        <div>
+            <p id="explaination1"></p>
+        </div>
+
+        <br>
+        
+        <center>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="table">
+                        <h2>The PPF</h2>
+                        <table class="table table-bordered">
+                            <tr class="table table-light">
+                                <th class="#">No.</th>
+                                <th class="name">Name</th>
+                                <th class="link">Rank</th>
+                                <th class="pictures">Pictures</th>
+                            </tr>
+            
+                            <tr>
+                                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                                <td class="center">Mr. Barrel</td>
+                                <td class="center">North Enigma City Police Officers</td>
+                                <td class="center">
+                                    <img src="PPF-Barrel.jpg">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+                                <td class="center">Mr. Hotchkiss</td>
+                                <td class="center">Purification Soldiers</td>
+                                <td class="center">
+                                    <img src="PPF-Hotchkiss.jpg">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="center">03</td>
+                                <td class="center">Mr. Shapley</td>
+                                <td class="center">Security/Activity Monitor</td>
+                                <td class="center">
+                                    <img src="PPF-Shapley.jpg">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="center">04</td>
+                                <td class="center">Mr. Strudel</td>
+                                <td class="center">Chaos-Superstructure Mediators (Assistant)</td>
+                                <td class="center">
+                                    <img src="PPF-Strudel.jpg"
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            
+
+                <br>
+
+                <div class="col-md-6">
+                    <section class="table">
+                        <h2>The Anomalies</h2>
+                        <table class="table table-bordered">
+                            <tr class="table table-light">
+                                <th class="#">No.</th>
+                                <th class="name">Name</th>
+                                <th class="class">PPF Anomalies Code</th>
+                                <th class="pictures">Pictures</th>
+                            </tr>
+
+                            <tr class="table table-danger">
+                                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                                <td class="center">The Evil</td>
+                                <td class="center">A-03-H</td>
+                                <td class="center">
+                                    <img src="PPF-Theevil.jpg">
+                                </td>
+                            </tr>
+
+                            <tr class="table table-danger">
+                                <td class="center" style="font-family: 'Digital Numbers', sans-serif;">02</td>
+                                <td class="center">The Good</td>
+                                <td class="center">A-01-Q</td>
+                                <td class="center">
+                                    <img src="PPF-Thegood.jpg">
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+
+            <br>
+
+            <section class="table">
+                <h2>The Others</h2>
+                <table class="table table-bordered">
+                    <tr class="table table-light">
+                        <th class="#">No.</th>
+                        <th class="name">Name</th>
+                        <th class="link">Link</th>
+                        <th class="pictures">Pictures</th>
+                    </tr>
+
+                    <tr class="table table-danger">
+                        <td class="center">01</td>
+                        <td class="center">Lord HanseΓ</td>
+                        <td class="center">
+                            <a class="hansel-link" href="https://the-edgyverse.fandom.com/wiki/Lord_HanseΓ#Late_Night_Urban_Legend" target="_blank">HanseΓ</a>
+                        </td>
+                        <td>
+                            <div class="horizontal-container">
+                                <img src="PPF-FoxHansel.jpg" class=".center-img">
+                                    
+                                <br>
+                                
+                                <img src="PPF-KyuubiForm.jpg" class=".center-img">
+                                
+                                <br>
+                                    
+                                <img src="PPF-EnigmaDemon.jpg" class=".center-img">
+                                
+                                <br>
+                                
+                                <img src="PPF-Demonspawn.jpg" class=".center-img">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table table-danger">
+                        <td class="center" style="font-family: 'Digital Numbers', sans-serif;">01</td>
+                        <td class="center">BELI∀L Ignis</td>
+                        <td class="center">
+                            <a class="beli∀l-link" href="https://the-edgyverse.fandom.com/wiki/Beli%C9%90l_Ignis">BELI∀L</a>
+                        </td>
+                        <td>
+                            <div class="horizontal-container">
+                                <img src="PPF-BELI∀L.jpg" class=".center-img">
+                                    
+                                <br>
+                                
+                                    
+                                <img src="PPF-Halfdragon.jpg" class=".center-img">
+                                
+                                <br>
+
+                                <img src="PPF-Hugedragon.jpg" class=".center-img">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </center>
+    </main>
+
+    <br>
+
+    <main class="container mt-4">
+        <h1 class="center">Links</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>PPF Staff</h2>
+                <ul class="ppf-staff">
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/Daniel_F._Barrel#Late_Night_Urban_Legend" target="_blank">Barrel</a></li>
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/Marshall_Hotchkiss#Late_Night_Urban_Legend" target="_blank">Hotchkiss</a></li>
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/Mister_Shapley">Shapley</a></li>
+                </ul>
+            </div>
+            
+            <br>
+        
+            <div class="col-md-6">
+                <h2>The Anomalies</h2>
+                <ul class="ppf-anomalies">
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/A-03-H" target="_blank">The Evil</a></li>
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/A-01-Q" target="_blank">The Good</a></li>
+                </ul>
+            </div>
+
+            <br>
+            
+            <div class="col-md-6">
+                <h2>The Others</h2>
+                <ul>
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/Lord_HanseΓ#Late_Night_Urban_Legend">HanseΓ</a></li>
+                    <li><a href="https://the-edgyverse.fandom.com/wiki/Beli%C9%90l_Ignis">BELI∀L</a></li> 
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer style="text-align: center; padding: 10px; background-color: #ce80ff; color: white;">
+        &copy; 2024 My Personal Page <br>
+        &copy; The Edgyverse Wiki
+    </footer>
+
+    <script>
+        document.getElementById('explaination1').innerHTML = "These are all based on Edgyverse Wiki."
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
