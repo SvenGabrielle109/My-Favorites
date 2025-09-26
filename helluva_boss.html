@@ -123,7 +123,7 @@
             font-weight: bold;
         }.e12s2,.octavia-link_1,.i_w_b_o-link{
             color: white;
-        }.e12s2:hover{
+        }.e12s2:hover,.andrealphus-link:hover{
             background: linear-gradient(#b3eef4,#d6fffb);
             color: blue;
             font-weight: bold;
@@ -193,16 +193,27 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: 36px;
             font-weight: bold;
-        }.Episode, .Songs{
+        }.Episode, .Songs,.s1,.s2,.Characters{
             background: linear-gradient(black,red);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bold;
+            text-align: center;
+        }.millie-link:hover,.moxxie-link:hover{
+            background: linear-gradient(black,red);
+            font-weight: bold;
+            color: white;
+        }.loona-link:hover{
+            background-color: #93a1a7;
+            color: black;
+            font-weight: bold;
+        }th,tr{
+            text-align: center;
         }
     </style>
 </head>
-<body>
+<body class="container mt-4">
     <header>
         <h1>Welcome to My Personal Page</h1>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background: #a958c7;">
@@ -243,13 +254,12 @@
 
     <main>
         <h1 class="Helluva_Boss-Title">Helluva Boss</h1>
-        <h2 class="Episode">Favorite Episodes</h2>
         <br>
 
         <div class="row">
     		<div class="col-md-6">
         		<section class="table">
-        			<h2 class="s1">Favorite Episode of Season 1</h2>
+        			<h2 class="s1">Episode of Season 1</h2>
         			<table class="table table-bordered">
             			<tr>
             			  <th class="#">No.</th>
@@ -303,7 +313,7 @@
 
           	<div class="col-md-6">
         		<section class="table">
-    				<h2 class="s2">Favorite Episode of Season 2</h2>
+    				<h2 class="s2">Episode of Season 2</h2>
         			<table class="table table-bordered">
             			<tr class="table table-light">
             			  <th class="#">No.</th>
@@ -361,9 +371,12 @@
           			</table>
         		</section>
       		</div>
+        </div>
 
-            <div class="col-md-6">
-                <h2 class="Songs">Songs</h2>
+        <br><br>
+
+        <center>
+            <h2 class="Songs">Songs</h2>
                 <section class="table">
         			<table class="table table-bordered">
             			<tr class="table table-light">
@@ -455,7 +468,111 @@
                     </table>
                 </section>
             </div>
-      	</div>
+            </div>
+        </center>
+
+
+        <br><br>
+
+        <center>
+            <h2 class="Characters">Characters</h2>
+            <section class="table">
+        		<table class="table table-bordered">
+            		<tr class="table table-light">
+                        <th class="#">No.</th>
+                        <th class="name">Name</th>
+                        <th class="voiced_by">Voiced by</th>
+                        <th class="appearances">
+                            <details>
+                                <summary>Social Rank</summary>
+                                    <i id="note"></i>
+                            </details>
+                        </th>
+                        <th class="sources">Link</th>
+                    </tr>
+
+                    <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">01</td>
+                            <td class="center" style="color: white;">Stolas</td>
+                            <td class="center" style="color: white;">Bryce Pinkham</td>
+                            <td class="center" style="color: white;">Goetia</td>
+                            <td class="center">
+                                <a class="stolas-link_1" href="https://hazbinhotel.fandom.com/wiki/Stolas" target="_blank">Stolas Wiki</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">02</td>
+                            <td class="center" style="color: white;">Blitzo</td>
+                            <td class="center" style="color: white;">Brandon Rogers</td>
+                            <td class="center" style="color: white;">IMP</td>
+                            <td class="center">
+                                <a class="blitzø-link_1" href="https://hazbinhotel.fandom.com/wiki/Blitzo" target="_blank">Blitzo Wiki</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">03</td>
+                            <td class="center" style="color: white;">Moxxie</td>
+                            <td class="center" style="color: white;">Richard Steven Horvitz</td>
+                            <td class="center" style="color: white;">IMP</td>
+                            <td class="center">
+                                <a class="moxxie-link" href="https://hazbinhotel.fandom.com/wiki/Moxxie" target="_blank">Moxxie Wiki</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">04</td>
+                            <td class="center" style="color: white;">Millie</td>
+                            <td class="center" style="color: white;">Vivienne Medrano</td>
+                            <td class="center" style="color: white;">IMP</td>
+                            <td class="center">
+                                <a class="millie-link" href="https://hazbinhotel.fandom.com/wiki/Millie" target="_blank">Millie Wiki</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">05</td>
+                            <td class="center" style="color: white;">Loona</td>
+                            <td class="center" style="color: white;">Erica Lindbeck</td>
+                            <td class="center" style="color: white;">Hellhound</td>
+                            <td class="center">
+                                <a class="loona-link" href="https://hazbinhotel.fandom.com/wiki/Loona" target="_blank">Loona Wiki</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">06</td>
+                            <td class="center" style="color: white;">Octavia</td>
+                            <td class="center" style="color: white;">Alexandra Harris</td>
+                            <td class="center" style="color: white;">Daughter of Stolas</td>
+                            <td class="center">
+                                <a class="octavia-link_1" href="https://hazbinhotel.fandom.com/wiki/Octavia" target="_blank">Octavia Wiki</a>
+                            </td>
+                        </tr> 
+                        
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">07</td>
+                            <td class="center" style="color: white;">Andrealphus</td>
+                            <td class="center" style="color: white;">Max Mittelman</td>
+                            <td class="center" style="color: white;">Marquis</td>
+                            <td class="center">
+                                <a class="andrealphus-link" href="https://hazbinhotel.fandom.com/wiki/Andrealphus" target="_blank">Andrealphus Wiki</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="center" style="font-family: 'Digital Numbers', sans-serif; color: white;">08</td>
+                            <td class="center" style="color: white;">Beelzebub</td>
+                            <td class="center" style="color: white;">Rochelle Diamante</td>
+                            <td class="center" style="color: white;">Queen of Gluttony</td>
+                            <td class="center">
+                                <a class="beelzebub" href="https://hazbinhotel.fandom.com/wiki/Beelzebub" target="_blank">Beelzebub Wiki</a>
+                            </td>
+                        </tr>
+                    </table>
+            </section>
+        </center>
     </main>
     
     <br>
@@ -465,6 +582,7 @@
         &copy; Helluva Boss Wiki
     </footer>
 
+    <script type="py" src="main2.py"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
